@@ -24,10 +24,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 public class myPanel extends JPanel{
 
-   
-			//add("Center",layer );
-			//layer.start();
-   
 	public boolean isFinishSet = false;
 	public int score=10;
 	public int level=50;
@@ -36,23 +32,11 @@ public class myPanel extends JPanel{
 	data a =new data();
 	public void set(int level)
 	{
-		this.level=level;
+		this.level=leve;
 	}
-	
-
-
-	
-
-	
 	public myPanel() throws IOException{
 		 
-        
 		this.setLayout(new GridLayout(6, 1));
-		//this.setSize(600,600);
-		//this.setLayout(new FlowLayout());
-		/*
-		 *
-		 */
 		JSlider scoreParameter = new JSlider();
 		scoreParameter.setMinimum(1);
 		scoreParameter.setMaximum(10);
@@ -123,9 +107,6 @@ public class myPanel extends JPanel{
 		this.add(speedFactor);
 		this.add(speedParameter);
 
-		/*
-		 * 
-		 */
 		JSlider squareSize = new JSlider();
 		squareSize.setMinimum(10);
 		squareSize.setMaximum(30);
@@ -147,51 +128,25 @@ public class myPanel extends JPanel{
 		});
 		this.add(squareFactor);
 		this.add(squareSize);
-		
-		
-		 
 		JButton startBt = new JButton("open game");
 	
-		
-		
-		//startBt.setForeground(Color.BLACK);
-		//startBt.setFont(new Font("黑体", Font.BOLD, 18));
-		//startBt.setBackground(Color.WHITE);
-		//startBt.setSize(400,30);
-		//startBt.setBorder(new LineBorder(Color.BLACK));
 		startBt.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				
-				//System.out.println(score);
-				//data.setScore(score);
-				//System.out.println(level);
-				//data.setLevel(level);
-				//System.out.println(speed);
-				//data.setSpeed(speed);
-				//System.out.println(pixelSize);
-				//data.setPixelSize(pixelSize);
+			
 				new gameFrame();
 				startBt.setEnabled(false);
 		
-				//startBt.setVisible(false);
 				
-				
-				//add("Center",layer );
-				//layer.start();
 			}
 		});
 		this.add(startBt);
 		
 		
 		JButton startBt1 = new JButton("adjust data");
-		//startBt.setForeground(Color.BLACK);
-		//startBt.setFont(new Font("黑体", Font.BOLD, 18));
-		//startBt.setBackground(Color.WHITE);
-		//startBt.setSize(400,30);
-		//startBt.setBorder(new LineBorder(Color.BLACK));
+		
 		startBt1.addActionListener(new ActionListener(){
 			
 			public void actionPerformed(ActionEvent e) {
@@ -218,50 +173,12 @@ public class myPanel extends JPanel{
 		    	
 		    	
 		    	
-		    	/*
-		    	String line=null;
-		    	FileReader fileReader = null;
-				try {
-					fileReader = new FileReader("the-file-name.txt");
-				} catch (FileNotFoundException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-
-		            // Always wrap FileReader in BufferedReader.
-		            BufferedReader bufferedReader = 
-		                new BufferedReader(fileReader);
-
-		            try {
-						while((line = bufferedReader.readLine()) != null) {
-						    System.out.println(line);
-						}
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}   
-
-		            // Always close files.
-		            try {
-						bufferedReader.close();
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}  
-		            */
 			}
 		});
 		this.add(startBt1);
 		
-		/*
-		 * 
-		 */
 		JButton cancelBt = new JButton("CANCEL");
-		//startBt.setForeground(Color.BLACK);
-		//startBt.setFont(new Font("黑体", Font.BOLD, 18));
-		//startBt.setBackground(Color.WHITE);
-		//startBt.setSize(400,30);
-		//startBt.setBorder(new LineBorder(Color.BLACK));
+		
 		cancelBt.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {

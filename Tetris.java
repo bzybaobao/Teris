@@ -22,50 +22,7 @@ public class Tetris extends JFrame{
 		{public void windowClosing(WindowEvent e){System.exit(0);}});
 		setSize (600, 600);
 		myPanel pan= new myPanel();
-		//pan.setLayout(null);
 		add(pan);
-		
-		//pan.setVisible(true);
-		show();
-		//this.setVisible(true);
-		//show();
-		//JPanel pan= new JPanel();
-		//add(pan);
-		//pan.setVisible(true);
-		//JSlider scoreParameter = new JSlider();
-		//pan.add(scoreParameter);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/*
-		
-		JSlider scoreParameter1 = new JSlider();
-		pan.add(scoreParameter1);
-	    JButton okButton = new JButton("OK");
-		pan.add(okButton);
-		okButton.setVisible(true);
-		okButton.setLayout(null);
-		okButton.setBounds(50, 50, 50, 50);
-		*/
-		//pan.setVisible(true);
-		//add(pan);
-		//Layer layer=new Layer();
-		//add("Center",layer );
-		//layer.start();
-		//show();
-		
+		show();	
 	}
 }
